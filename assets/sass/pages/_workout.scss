@@ -1,0 +1,59 @@
+.page-template-template-workout {
+  .page-main {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .table-wrap {
+    margin: -230px auto 25px;
+    max-width: unset;
+    width: 90%;
+    
+    @media (max-width: 992px) {
+      overflow-x: scroll;
+      //box-shadow: 0 3px 43px rgba(153,159,166,.1);
+      box-shadow: none;
+    }
+
+    .main-table {
+      @media (max-width: 992px) {
+        box-shadow: 0 3px 43px rgba(153,159,166,.1);
+      }
+    }
+  }
+
+  #workout {
+    th {
+      padding-left: 10px;
+      white-space: nowrap;
+    }
+
+    td {
+      padding-left: 10px;
+    }
+
+    .first, .fourth {
+      width: auto;
+    }
+
+    .first {
+      &:after {
+        content: '';
+        left: -13px;
+      }
+    }
+
+    .fourth {
+      &:after {
+        content: '';
+        right: -14px;
+      }
+    }
+  }
+
+  .name-item {
+    white-space: nowrap;
+    padding-right: 10px;
+  }
+}

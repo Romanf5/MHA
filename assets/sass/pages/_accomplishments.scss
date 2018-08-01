@@ -1,0 +1,187 @@
+.top-section {
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: block;
+    opacity: .4;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-weight: normal;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 30%;
+    font-size: 72px;
+    line-height: 100px;
+    margin: 0;
+
+    @media (max-width: 1366px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 667px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 414px) {
+      font-size: 34px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    border-right: 1500px solid transparent;
+    border-left: 1500px solid transparent;
+    border-bottom: 100px solid #ffffff;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+
+    @media (max-width: 1680px) {
+      border-right: 1000px solid transparent;
+      border-left: 1000px solid transparent;
+    }
+  }
+}
+
+.table-section {
+  .ornament {
+    @media (max-width: 667px) {
+      display: none;
+    }
+
+    &.middle {
+      top: 70%;
+      left: auto;
+      right: -7%;
+    }
+
+    .ornament__outer {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+
+      .ornament__inner {
+        width: 160px;
+        height: 160px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    @media (max-width: 667px) {
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .table__headline {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+.page-template-template-accomplishments {
+  .page-footer {
+    display: block;
+  }
+
+  .head {
+    .fourth {
+      padding-left: 10px;
+    }
+  }
+
+  .responsive-image {
+    .logo-link {
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      .sticky {
+        margin: 0;
+      }
+    }
+  }
+
+  .table {
+    @media (max-width: 667px) {
+      width: 620px;
+    }
+    
+    tr{
+      td{
+        &:not(:last-child) {
+          @media (max-width: 800px) {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .head {
+      th {
+        @media (max-width: 800px) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    &__headline {
+      @media(max-width: 667px) {
+        max-width: 620px;
+      }
+    }
+  }
+  
+  .table-wrap {
+    margin: -230px auto 25px;
+
+    @media (max-width: 992px) {
+      max-width: 740px;
+    }
+
+    @media (max-width: 800px) {
+      max-width: 640px;
+    }
+
+    @media (max-width: 667px) {
+      margin: -230px 10px 25px;
+      padding-left: 0;
+    }
+
+    @media (max-height: 500px) {
+      margin: -130px auto 25px;
+    }
+  }
+}

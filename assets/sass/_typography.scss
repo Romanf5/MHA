@@ -1,0 +1,99 @@
+//  Подключения шрифтов
+
+//@font-face {
+//  font-family: 'Bebas';
+//  font-weight: 400;
+//  src:  local('Bebas'), local('Bebas-Normal');
+//  src:  url('../fonts/Bebas-reg/BebasNeueRegular.eot');
+//  src:  url('../fonts/Bebas-reg/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+//  url('../fonts/Bebas-reg/BebasNeueRegular.woff') format('woff'),
+//  url('../fonts/Bebas-reg/BebasNeueRegular.ttf') format('truetype'),
+//  url('../fonts/Bebas-reg/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+//}
+
+@font-face {
+  font-family: 'Bebas';
+  font-weight: 400;
+  src:  local('Bebas'), local('Bebas-Normal');
+  src:  url('../fonts/Bebas-new/Bebas.eot');
+  src: url('../fonts/Bebas-new/Bebas.woff') format('woff'),
+  url('../fonts/Bebas-new/Bebas.ttf') format('truetype');
+}
+
+// font-family: 'Poppins-Regular';
+// font-weight: 400;
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src:  local('Poppins'), local('Poppins-Regular');
+  src:  url('../fonts/Poppins-Regular/Poppins-Regular.eot');
+  src: url('../fonts/Poppins-Regular/Poppins-Regular.woff') format('woff'),
+  url('../fonts/Poppins-Regular/Poppins-Regular.otf'),
+  url('../fonts/Poppins-Regular/Poppins-Regular.ttf') format('truetype');
+}
+
+// font-family: 'Muli';
+// font-weight: 400;
+@font-face {
+  font-family: 'Muli';
+  font-weight: 400;
+  src:  local('Muli'), local('Muli-Bold');
+  src:  url('../fonts/Muli/muli.eot');
+  src:  url('../fonts/Muli/muli.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/muli/Muli.woff') format('woff'),
+  url('../fonts/muli/Muli.ttf') format('truetype'),
+  url('../fonts/muli/Muli.svg#Roboto-Bold') format('svg');
+}
+
+// font-family: 'Muli-light';
+// font-weight: 300;
+@font-face {
+  font-family: 'Muli';
+  font-weight: 300;
+  src:  local('Muli'), local('Muli-Light');
+  src:  url('../fonts/muli-light/Muli-LightItalic.eot');
+  src:  url('../fonts/muli-light/Muli-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/muli-light/Muli-LightItalic.woff') format('woff'),
+  url('../fonts/muli-light/MULI-LIGHTITALIC.ttf') format('truetype'),
+  url('../fonts/muli-light/Muli-LightItalic.svg#Roboto-Bold') format('svg');
+}
+
+// font-family: 'Icomoon';
+@font-face {
+  font-family: 'Icomoon';
+  font-weight: normal;
+  src:  local('Icomoon'), local('Icomoon-Regular');
+  src:  url('../fonts/icomoon/icomoon.eot'),
+  url('../fonts/icomoon/icomoon.woff') format('woff'),
+  url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+  url('../fonts/icomoon/icomoon.svg') format('svg');
+}
+
+// Заголовки
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+h2 {
+	font-size: 36px;
+  font-weight: normal;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}

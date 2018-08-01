@@ -1,0 +1,359 @@
+.introduction {
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+
+  @media (max-width: 414px) {
+    height: 100vh;
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 40%;
+    font-size: 72px;
+    line-height: 100px;
+    margin: 0;
+
+    @media (max-width: 1366px) {
+      font-size: 60px;
+      padding-top: 15px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 414px) {
+      font-size: 34px;
+    }
+    
+    @media (width: 568px) and (height: 320px) {
+      top: 25%;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    border-right: 1500px solid transparent;
+    border-left: 1500px solid transparent;
+    border-bottom: 150px solid #ffffff;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+
+    @media (max-width: 1680px) {
+      border-right: 1000px solid transparent;
+      border-left: 1000px solid transparent;
+    }
+    
+    @media (max-width: 1280px) {
+      bottom: -30px;
+    }
+
+    @media (max-width: 800px) {
+      z-index: 1;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: block;
+    opacity: .4;
+  }
+}
+
+.down {
+  position: absolute;
+  bottom: 55%;
+  border-right: 1500px solid transparent;
+  border-left: 1500px solid transparent;
+  border-top: 120px solid #ffffff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 0;
+
+  @media (max-width: 1680px) {
+    border-right: 1000px solid transparent;
+    border-left: 1000px solid transparent;
+  }
+}
+
+.triangle-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 86.6px 50px;
+  border-color: transparent transparent #6980fe transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.team-section {
+  padding-top: 0;
+  position: relative;
+  padding-bottom: 100px;
+  background: #f8f9fa;
+
+  @media (max-width: 1280px) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 1024px) {
+    padding-bottom: 35px;
+  }
+
+  .ornament {
+    @media (max-width: 1280px) {
+      top: 0;
+    }
+
+    &.border {
+      @media (max-width: 1280px) {
+        display: none;
+      }
+    }
+    
+    .left, .right {
+      z-index: 10;
+
+      @media (max-width: 480px) {
+        width: 160px;
+      }
+
+      @media (max-width: 400px) {
+        width: 100px;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    height: 40%;
+  }
+
+  &-wrap {
+    max-width: 1330px;
+    margin: 135px auto 0;
+    position: relative;
+    padding: 0 15px;
+    
+    @media (max-width: 1280px) {
+      margin: 60px auto 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 30px auto 0;
+    }
+
+    article {
+      margin-bottom: 70px;
+      position: relative;
+
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 414px) {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        @media (max-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .post {
+      margin-bottom: 75px;
+    }
+
+    .ornament {
+      &.big {
+        @media (max-width: 1024px) {
+          transform: scale(.8);
+        }
+
+        @media (max-width: 768px) {
+          transform: scale(.65);
+          right: -10px;
+          top: -40px;
+        }
+      }
+      &.middle {
+        @media (max-width: 768px) {
+          transform: scale(.65);
+        }
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  flex-basis: 49%;
+
+  h2 {
+    margin-top: 40px;
+    font-size: 54px;
+    margin-bottom: 35px;
+    color: #202020;
+    
+    @media (max-width: 1366px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 46px;
+    }
+
+    @media (max-width: 800px) {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 667px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 414px) {
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    position: relative;
+
+    @media (max-width: 1366px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 800px) {
+      line-height: 30px;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 667px) {
+      line-height: 22px;
+      font-size: 17px;
+    }
+
+    @media (max-width: 550px) {
+      line-height: 20px;
+    }
+
+    @media (max-width: 414px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.article-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    padding-right: 15px;
+  }
+
+  @media (max-width: 800px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+
+  .image-holder {
+    height: 455px;
+    overflow: hidden;
+    flex-basis: 44%;
+
+    @media (max-width: 1280px) {
+      flex-basis: 47%;
+    }
+
+    @media (max-width: 1024px) {
+      height: 345px;
+    }
+
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+
+    @media (max-width: 550px) {
+      height: 250px;
+    }
+  }
+}
+
+.page-template-template-team {
+  .page-footer {
+    display: block;
+  }
+
+  .main-nav {
+    .logo-link {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .logo-link {
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .sticky {
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
